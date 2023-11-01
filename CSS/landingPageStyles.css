@@ -72,8 +72,9 @@ header .navigation .navigationItems a {
     background-color: green;
     padding: 10px;
     border-radius: 10%;
-    transition: 0.3s ease;
+    transition: all 1s ease;
 }
+
 
 header .navigation .navigationItems a:before {
     content: "";
@@ -148,7 +149,7 @@ section {
 
 
 .exploreH1 {
-    animation: exploreTyping 4s steps(30, end) infinite, exploreWait 2s 4s infinite, exploreErasing 10s 6s steps(40, end) infinite;
+    animation: exploreTyping 2s steps(30, end) infinite, exploreWait 2s 2s infinite, exploreErasing 5s 3s steps(30, end) infinite;
 }
 
 
