@@ -1,8 +1,10 @@
 const buttons = document.querySelectorAll(".navButton");
 const slides = document.querySelectorAll(".videoSlide");
 
-const contents = document.querySelectorAll(".content");
 const logoVideo = document.getElementById("logoVideo");
+
+const exploreLink = document.getElementById("exploreLink");
+const contents = document.querySelectorAll(".content");
 
 var sliderNav = function (manual) {
     buttons.forEach((btn) => {
@@ -33,4 +35,16 @@ logoVideo.addEventListener("mouseenter", () => {
 
 logoVideo.addEventListener("mouseleave", () => {
     logoVideo.stop();
+});
+
+exploreLink.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const currentActiveContent = document.querySelector(".content.active");
+    const currentIndex = Array.from(contents).indexOf(currentActiveContent);
+
+    if (currentIndex < contents.length - 1) {
+        currentActiveContent.classList.remove("active");
+        contents[currentIndex + 1].classList.add("active");
+    }
 });

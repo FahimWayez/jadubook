@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+section {
+    padding: 50px 200px;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+}
+
+.home::before {
+    z-index: 777;
+    content: "";
+    position: absolute;
+    background: rgba(50, 130, 80, 0.05);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.home .content {
+    z-index: 888;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.home .content .textBody {
+    font-size: large;
+    margin: 0px 60px 50px 60px;
+}
+
+.home .content .header {
+    font-size: xx-large;
+    margin-bottom: -30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: green;
+}
+
+.home .content a {
+    position: relative;
+    left: 420px;
+    background: orange;
+    padding: 15px 35px;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.home video {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.darkOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+@media (max-width: 1040px) {
+
+    section {
+        padding: 100px 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .home .content h1 {
+        font-size: 3em;
+        line-height: 60px;
+    }
+}
