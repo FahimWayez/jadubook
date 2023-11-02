@@ -23,6 +23,16 @@ section {
     background: white;
 }
 
+h1 {
+    z-index: 888;
+    color: orange;
+    font-size: xxx-large;
+    text-transform: uppercase;
+    position: relative;
+    right: 50px;
+    margin-bottom: 30px;
+}
+
 .home::before {
     z-index: 777;
     content: "";
