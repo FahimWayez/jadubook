@@ -85,6 +85,14 @@ section {
     z-index: 1;
 }
 
+#loadingAnimation {
+    background: white url(../View/Images/loadingAnimation.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
 @media (max-width: 1040px) {
 
     section {
