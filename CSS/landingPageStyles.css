@@ -401,11 +401,3 @@ section {
         line-height: 60px;
     }
 }
-
-#loadingAnimation {
-    background: white url(../View/Images/loadingAnimation.gif) no-repeat center center;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-}
