@@ -14,17 +14,18 @@ if (!empty($email) && !empty($message)) {
         $mail = new PHPMailer(true);
 
         try {
-            $mail->SMTPDebug = 0;
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';  
             $mail->SMTPAuth = true;
             $mail->Username = 'urojahaj465@gmail.com'; 
-            $mail->Password = 'emkvnjimfjmqfmdi'; 
+            $mail->Password = '465urojahaj!!!'; 
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
-
+            
             $mail->setFrom($email);
             $mail->addAddress('urojahaj465@gmail.com');  
+
+            $mail->isHTML(false);
             $mail->Subject = "From: $name <$email>";
             $mail->Body = "Name: $name\nEmail: $email\nPhone: $phone\nMessage:\n$message\n\nRegards,\n$name";
 

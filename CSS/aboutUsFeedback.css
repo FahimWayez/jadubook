@@ -8,29 +8,18 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* body {
-    display: flex;
-    padding: 0 10px;
-    min-height: 100vh;
-    background: #0D6EFD;
-    align-items: center;
-    justify-content: center;
-} */
 
-::selection {
-    color: #fff;
-    background: #0D6EFD;
-}
 
 .wrapper {
-    width: 715px;
+    width: 1000px;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 
 .wrapper header {
-    font-size: 22px;
+    font-size: 50px;
+    text-align: center;
     font-weight: 600;
     padding: 20px 30px;
     border-bottom: 1px solid #ccc;
@@ -48,7 +37,7 @@
 form .dblField {
     display: flex;
     margin-bottom: 25px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .dblField .field {
@@ -62,7 +51,7 @@ form .dblField {
     position: absolute;
     top: 50%;
     left: 18px;
-    color: #ccc;
+    color: rgba(0, 0, 0, 0.5);
     font-size: 17px;
     pointer-events: none;
     transform: translateY(-50%);
@@ -76,23 +65,23 @@ form .message textarea {
     padding: 0 18px 0 48px;
     font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.7);
 }
 
 .field input::placeholder,
 .message textarea::placeholder {
-    color: #ccc;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .field input:focus,
 .message textarea:focus {
     padding-left: 47px;
-    border: 2px solid #0D6EFD;
+    border: 2px solid rgba(0, 0, 0);
 }
 
 .field input:focus~i,
 .message textarea:focus~i {
-    color: #0D6EFD;
+    color: rgba(0, 0, 0);
 }
 
 form .message {
@@ -134,12 +123,12 @@ form .buttonArea {
     cursor: pointer;
     border-radius: 5px;
     padding: 13px 25px;
-    background: #0D6EFD;
+    background: rgba(0, 0, 0, 0.7);
     transition: background 0.3s ease;
 }
 
 .buttonArea button:hover {
-    background: #025ce3;
+    background: orange;
 }
 
 .buttonArea span {
