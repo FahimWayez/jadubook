@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="../CSS/aboutUs.css" </head>
+    <link rel="stylesheet" href="../CSS/aboutUs.css">
+    <link rel="stylesheet" href="../CSS/aboutUsFeedback.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
 
 <body>
     <div id="loadingAnimation"></div>
@@ -78,7 +82,7 @@
 
     <section class="sec4">
         <div class="container">
-            <h3 class="sectionTitle">Lorem Ipsum</h3>
+            <h3 class="sectionTitle">Contact Us</h3>
             <div class="content">
                 <div class="mediaInfo">
                     <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
@@ -92,6 +96,38 @@
                     <video src="images/aboutUs3.mp4" autoplay muted loop></video>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="sec5">
+        <div class="wrapper">
+            <header>Feel free to send a message!</header>
+            <form action="../Controller/aboutUsFeedback.php" method="POST">
+                <div class="dblField">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Enter your name">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <div class="dblField">
+                    <div class="field">
+                        <input type="text" name="phone" placeholder="Enter your phone">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="email" placeholder="Enter your email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="message">
+                    <textarea placeholder="Write your message" name="message"></textarea>
+                    <i class="fa-solid fa-message"></i>
+                </div>
+                <div class="buttonArea">
+                    <button type="submit">Send Message</button>
+                    <span></span>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -112,8 +148,10 @@
         ScrollReveal().reveal(".sec3 .member .image", { delay: 600, origin: "top", interval: 200 });
         ScrollReveal().reveal(".sec3 .member .details", { delay: 2000, origin: "left", interval: 1000 });
         ScrollReveal().reveal(".mediaInfo", { delay: 500, origin: "left", interval: 1000 });
+        ScrollReveal().reveal(".wrapper", { delay: 1000, origin: "bottom", interval: 1000 });
     </script>
     <script src="../JS/loadingAnimation.js"></script>
+    <script src="../JS/aboutUsFeedback.js"></script>
 </body>
 
 </html>
