@@ -7,6 +7,7 @@
     <title>About Us</title>
     <link rel="stylesheet" href="../CSS/aboutUs.css" </head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 <body>
     <section class="sec1">
@@ -23,23 +24,94 @@
                         unde iure!</p>
                 </div>
             </div>
+            <div class="goDown">
+                <img src="images/goDown.gif" alt="">
+            </div>
+
         </div>
     </section>
 
     <section class="sec2">
         <div class="container">
-            <h3 class="sectionTitle">Lorem Ipsum</h3>
-            <div class="image">
-                <img src="images/aboutUs2.jpg" alt="">
-            </div>
-            <div class="info">
-                <h4 class="infoTitle">Our Story</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis aliquid, accusantium eveniet
-                    adipisci praesentium? Totam, vero! Officia iusto minima id dolorem impedit quaerat nisi. Et iusto
-                    quam doloribus ipsa.</p>
+            <h3 class="sectionTitle">Our Story...</h3>
+            <div class="content">
+                <div class="image">
+                    <img src="images/aboutUs2.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h5 class="infoTitle">Nothing much! Just a fun project for a course in bachelors!</h5>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="sec3">
+        <div class="container">
+            <h3 class="sectionTitle">Meet Our Team!</h3>
+            <div class="content">
+                <div class="member">
+                    <div class="image">
+                        <img src="images/fahim.jpg" alt="Fahim Wayez">
+                    </div>
+                    <div class="details">
+                        <p>Fahim Wayez</p>
+                        <p><a href="https://github.com/FahimWayez"><i class="fa-brands fa-github"></i> Fahim
+                                Wayez</a></p>
+                        <p>fahimwayez@gmail.com</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="image">
+                        <img src="images/rahat.jpg" alt="Hasnain Rahat">
+                    </div>
+                    <div class="details">
+                        <p>Hasnain Rahat</p>
+                        <p><a href="https://github.com/FahimWayez"><i class="fa-brands fa-github"></i> Hasnain
+                                Rahat</a></p>
+                        <p>rjofbd@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec4">
+        <div class="container">
+            <h3 class="sectionTitle">Lorem Ipsum</h3>
+            <div class="content">
+                <div class="mediaInfo">
+                    <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://instagram.com"><i class="fa-solid fa-phone"></i> Contact</a></li>
+                    <li><a href="https://github.com/FahimWayez/jadubook"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </li>
+                    <li><a href="https://instagram.com"><i class="fa-solid fa-envelope"></i> Mail</a></li>
+                    <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </div>
+                <div class="image">
+                    <video src="images/aboutUs3.mp4" autoplay muted loop></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: "60px",
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal(".mainTitle, .sectionTitle", { delay: 500, origin: "top" });
+        ScrollReveal().reveal(".sec1 .image", { delay: 600, origin: "bottom" });
+        ScrollReveal().reveal(".textBox", { delay: 600, origin: "bottom" });
+        ScrollReveal().reveal(".goDown", { delay: 600, origin: "bottom" });
+        ScrollReveal().reveal(".sec2 .image", { delay: 600, origin: "left" });
+        ScrollReveal().reveal(".sec2 .info", { delay: 2000 });
+        ScrollReveal().reveal(".sec3 .member .image", { delay: 600, origin: "top", interval: 200 });
+        ScrollReveal().reveal(".sec3 .member .details", { delay: 2000, origin: "left", interval: 1000 });
+        ScrollReveal().reveal(".mediaInfo", { delay: 500, origin: "left", interval: 1000 });
+    </script>
 </body>
 
 </html>
