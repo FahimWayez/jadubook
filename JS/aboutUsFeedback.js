@@ -1,6 +1,6 @@
 //Contact Form in PHP
 const form = document.querySelector("form"),
-    statusTxt = form.querySelector(".button-area span");
+    statusTxt = form.querySelector(".buttonArea span");
 form.onsubmit = (e) => {
     e.preventDefault();
     statusTxt.style.color = "#0D6EFD";
@@ -9,7 +9,7 @@ form.onsubmit = (e) => {
     form.classList.add("disabled");
 
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "message.php", true);
+    xhr.open("POST", "../Controller/aboutUsFeedback.php", true);
     xhr.onload = () => {
         if (xhr.readyState == 4 && xhr.status == 200) {
             let response = xhr.response;

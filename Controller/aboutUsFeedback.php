@@ -1,27 +1,42 @@
 <?php
+require 'vendor/autoload.php';
 
-  $name = htmlspecialchars($_POST['name']);
-  $email = htmlspecialchars($_POST['email']);
-  $phone = htmlspecialchars($_POST['phone']);
-  $website = htmlspecialchars($_POST['website']);
-  $message = htmlspecialchars($_POST['message']);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-  if(!empty($email) && !empty($message)){
-    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-      $receiver = "urojahaj465@gmail.com"; //enter that email address where you want to receive all messages
-      $subject = "From: $name <$email>";
-      $body = "Name: $name\nEmail: $email\nPhone: $phone\nWebsite: $website\n\nMessage:\n$message\n\nRegards,\n$name";
-      $sender = "From: $email";
-      if(mail($receiver, $subject, $body, $sender)){
-         echo "Your message has been sent";
-      }else{
-         echo "Sorry, failed to send your message!";
-      }
-    }else{
-      echo "Enter a valid email address!";
+$name = htmlspecialchars($_POST['name']);
+$email = htmlspecialchars($_POST['email']);
+$phone = htmlspecialchars($_POST['phone']);
+$message = htmlspecialchars($_POST['message']);
+
+if (!empty($email) && !empty($message)) {
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $mail = new PHPMailer(true);
+
+        try {
+            $mail->SMTPDebug = 0;
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com';  
+            $mail->SMTPAuth = true;
+            $mail->Username = 'urojahaj465@gmail.com'; 
+            $mail->Password = 'emkvnjimfjmqfmdi'; 
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = 587;
+
+            $mail->setFrom($email);
+            $mail->addAddress('urojahaj465@gmail.com');  
+            $mail->Subject = "From: $name <$email>";
+            $mail->Body = "Name: $name\nEmail: $email\nPhone: $phone\nMessage:\n$message\n\nRegards,\n$name";
+
+            $mail->send();
+            echo "Your message has been sent";
+        } catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: " . $mail->ErrorInfo;
+        }
+    } else {
+        echo "Enter a valid email address!";
     }
-  }else{
-    echo "Email and message field is required!";
-    }
-
+} else {
+    echo "Email and message field are required!";
+}
 ?>
