@@ -1,5 +1,5 @@
 #loadingAnimation {
-    background: transparent url(../View/Images/loadingAnimation2.gif) no-repeat center center;
+    background: transparent url(../View/Images/loadingAnimation.gif) no-repeat center center;
     height: 100vh;
     width: 100%;
     position: fixed;
