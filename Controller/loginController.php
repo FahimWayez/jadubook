@@ -1,18 +1,55 @@
 <?php
-include_once '../Model/databaseConnection.php';
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+require_once("../Model/loginModel.php");
 
-    $conn = dbConnection();
+// require_once("twoFACodeSend.php  ");
 
-    $result = mysqli_query($conn, "SELECT * FROM credentials WHERE email='$email' AND password='$password'");
-
-    if ($result) {
-        header("location: ../View/userHomePage.html");
-    } 
-    mysqli_close($conn);
+if (isset($_POST["login"])) {
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    $_SESSION["email"] = $email;
     
+    $storedEmail = $_SESSION["email"];
+    $type = get_Type($storedEmail);
+    //--------------------------------------------------HashingPassword
+    function passwordHash($password)
+    {
+        $hashedPassword = "";
+        for ($i = 0; $i < strlen($password); $i++) {
+            $char = $password[$i];
+            $ascii = ord($char);
+            $hashedAscii = $ascii + 3;
+            $hashedChar = chr($hashedAscii);
+            $hashedPassword .= $hashedChar;
+        }
+        return $hashedPassword;
+    }
+    $hashedPassword = passwordHash($password);
+
+    $status = login($email, $hashedPassword);
+   
+    if ($status) 
+    {
+        if ($type['type'] == "Admin")
+        {
+            $_SESSION["flag"] = true;
+            header("location: ../View/adminLanding.php");
+            $_SESSION["adminAuthenticated"] = true;
+        }
+        else 
+        {
+            $_SESSION["flag"] = true;            
+            header("location: ../View/customerLanding.php");
+            $_SESSION["customerAuthenticated"] = true;
+        } 
+        
+    } 
+    else 
+    {
+        echo "Invalid username/password";
+    }
 }
 ?>
