@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books4MU</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../CSS/customerLanding.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-1">
+        <a href=""
+          ><video
+            class="logo"
+            src="Images/logo.mp4"
+            muted
+            autoplay
+            id="logoVideo"
+          ></video
+        ></a>
+
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="Search for book"
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="./cart.html" class="fa-solid fa-right-from-bracket"></a>
+          <div id="login-btn" class="fas fa-user"></div>
+        </div>
+      </div>
+
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="./index.html">Home</a>
+          <a href="#featured">featured</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>JaduBook</h3>
+          <p>Welcome to the magical world!</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="swiper books-slider">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide"
+              ><img src="images/book2.avif" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="images/book4.jpg" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="images/book5.jpg" alt=""
+            /></a>
+          </div>
+          <img
+            src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/stand.png"
+            class="stand"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="featured" id="featured">
+      <h1 class="heading"><span>Featured books</span></h1>
+
+      <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <a href="book1.html">
+                <img src="images/liberationwar.jpeg" alt="" />
+              </a>
+            </div>
+            <div class="content">
+              <h3>featured books</h3>
+              <div class="price">FREE</div>
+              x
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <h1 class="heading"><span>client's reviews</span></h1>
+
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="images/saf.jpg" alt="" />
+            <h3>Shafwan</h3>
+            <p>The best</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="explore.html">
+            <i class="fas fa-arrow-right"></i> explore
+          </a>
+          <a href="aboutUs.html">
+            <i class="fas fa-arrow-right"></i> About Us
+          </a>
+          <a href="customerLanding.html">
+            <i class="fas fa-arrow-right"></i> reviews
+          </a>
+          <a href="./feedback.html">
+            <i class="fas fa-arrow-right"></i> feedback
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-envelope"></i> fahimwayez@gmail.com </a>
+          <a href="#"> <i class="fas fa-envelope"></i> rjofbd@gmail.com </a>
+          <img src="images/location.jpg" class="map" alt="" />
+        </div>
+      </div>
+
+      <div class="share">
+        <a href="https://www.facebook.com" class="fab fa-facebook-f"></a>
+        <a href="https://www.instagram.com" class="fab fa-instagram"></a>
+        <a
+          href="https://www.linkedin.com/github.com/FahimWayez/jadubook"
+          class="fab fa-github"
+        ></a>
+        <a href="https://www.linkedin.com" class="fab fa-linkedin"></a>
+      </div>
+
+      <div class="credit">copyright ©2023 all rights reserved!</div>
+    </section>
+
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>     -->
+    <script src="../JS/customerLanding.js"></script>
+  </body>
+</html>
