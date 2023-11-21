@@ -40,15 +40,6 @@ $profilePhoto = getProfilePhoto($storedEmail);
         <div class="profileDetails">
             <p><strong>Email:</strong> <?php echo $profileDetails["email"]; ?></p>
         </div>
-        <div class="editProfile">
-            <form action="adminEditProfile.php" method="post">
-                <input type="hidden" name="name" value="<?php echo $profileDetails['name']; ?>">
-                <button type="submit">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    Edit Profile
-                </button>
-            </form>
-        </div>
         <div class="goBackButton">
             <a href="adminLanding.php">
                 <i class="fa-solid fa-backward"></i>

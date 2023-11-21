@@ -47,36 +47,6 @@
   padding: 0;
   color: #333;
 }
-
-.editProfile {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.editProfile button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: white;
-  color: orange;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: 3px solid orange;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
-.editProfile button:hover {
-  background-color: orange;
-  color: white;
-}
-
-.editProfile i {
-  font-size: 18px;
-  margin-right: 10px;
-}
-
 .sectionTitle {
   color: orange;
   margin-bottom: 10px;
