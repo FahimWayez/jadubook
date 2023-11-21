@@ -3,7 +3,15 @@
     function getProfile($email)
     {
         $conn = dbConnection();
-        $sql = "SELECT * from `jadubook`.`users` where email = '{$email}'";
+        $sql = "SELECT * from `jadubook`.`credentials` where email = '{$email}'";
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_array($result);        
+        return $row;
+    }
+    function getProfilePhoto($email)
+    {
+        $conn = dbConnection();
+        $sql = "SELECT `profilePhoto` from `jadubook`.`users` where email = '{$email}'";
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_array($result);
         
@@ -12,7 +20,7 @@
     function updateProfile($email, $name, $password)
     {
         $conn = dbConnection();
-        $sql3 = "UPDATE `jadubook`.`users` SET `name`='$name',`password`='$password' WHERE `email` = '$email'";
+        $sql3 = "UPDATE `jadubook`.`credentials` SET `name`='$name',`password`='$password' WHERE `email` = '$email'";
         $result3 = mysqli_query($conn, $sql3);
         return $result3;
     }

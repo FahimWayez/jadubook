@@ -3,15 +3,16 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
+  max-height: 50px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: orange;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 
@@ -24,8 +25,9 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 3px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 99999;
 }
 
 .header h2 {
@@ -57,16 +59,16 @@
   justify-content: center;
   border: none;
   background-color: white;
-  color: lightskyblue;
+  color: orange;
   padding: 10px 20px;
   border-radius: 5px;
-  border: 1px solid lightskyblue;
+  border: 3px solid orange;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: all 0.5s ease;
 }
 
 .editProfile button:hover {
-  background-color: lightskyblue;
+  background-color: orange;
   color: white;
 }
 
@@ -76,67 +78,28 @@
 }
 
 .sectionTitle {
-  color: lightskyblue;
+  color: orange;
   margin-bottom: 10px;
 }
 
-.separator {
-  border-top: 1px solid #ccc;
-  margin: 10px 0;
-}
-
-.downloadCard {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.downloadCard button {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  color: lightskyblue;
-  background-color: white;
-  padding: 10px 20px;
-  border: 1px solid lightskyblue;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.downloadCard button:hover {
-  background-color: lightskyblue;
-  color: white;
-}
-
-.downloadCard i {
-  font-size: 18px;
-  margin-right: 5px;
-}
-
-/* To center the icon and text vertically */
-.downloadCard button i {
-  margin-top: -2px;
-}
-
-/* Added styles for the Go Back button */
 .goBackButton {
   text-align: center;
-  margin-top: -530px;
-  margin-left: -480px;
 }
 
 .goBackButton a {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: orange;
+  border: 3px solid orange;
   padding: 5px 10px;
   border-radius: 5px;
+  transition: all 0.5s ease;
 }
 
 .goBackButton a:hover {
-  border: 1px solid #333;
+  background-color: orange;
+  color: white;
 }
 
 .goBackButton i {

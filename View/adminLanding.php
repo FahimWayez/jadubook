@@ -13,11 +13,13 @@ require_once("../Controller/loginController.php");
 $storedEmail = $_SESSION["email"];
 $userType = "Customer";
 
+
 $bookCount = bookCount();
 $customerCount = customerCount($userType);
 
 $profileDetails = getProfile($storedEmail);
-$profilePhoto = $profileDetails["profilePhoto"];
+$profilePhoto = getProfilePhoto($storedEmail);
+
 ?>
 
 
@@ -32,6 +34,7 @@ $profilePhoto = $profileDetails["profilePhoto"];
 </head>
 
 <body>
+
     <input type="checkbox" id="navToggle">
     <div class="sidebar">
         <div class="sidebarBrand">
