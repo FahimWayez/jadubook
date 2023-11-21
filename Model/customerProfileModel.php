@@ -13,7 +13,7 @@ return $result4;
 function getProfile($email)
 {
 $conn = dbConnection();
-$sql = "SELECT * from `jadubook`.`users` where email = '{$email}'";
+$sql = "SELECT * from `jadubook`.`credentials` where email = '{$email}'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result);
 
@@ -36,7 +36,15 @@ $sql5 = "UPDATE `jadubook`.`credentials` SET `name` = '{$name}', `email` = '{$em
 '{$password}'";
 mysqli_query($conn, $sql5);
 }
-
+function getProfilePhoto($email)
+    {
+        $conn = dbConnection();
+        $sql = "SELECT `profilePhoto` from `jadubook`.`users` where email = '{$email}'";
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_array($result);
+        
+        return $row;
+    }
 function updateProfilePhoto($email, $profilePhoto)
 {
 $conn = dbConnection();
