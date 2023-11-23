@@ -8,7 +8,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
   transition: all 0.2s linear;
 }
 
@@ -402,9 +401,11 @@ section {
 }
 
 .footer .box-container {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
 .footer .box-container .box h3 {
@@ -429,10 +430,6 @@ section {
   padding-right: 2rem;
 }
 
-.footer .box-container .box .map {
-  width: 100%;
-}
-
 .footer .share {
   padding: 1rem 0;
   text-align: center;
@@ -450,7 +447,7 @@ section {
 }
 
 .footer .share a:hover {
-  background: black;
+  background: orange;
 }
 
 .footer .credit {
@@ -463,10 +460,8 @@ section {
   text-align: center;
 }
 
-.footer .credit span {
-  color: rgba(255, 165, 0, 0.75);
-}
-
-iframe {
-  border: 2px solid black;
+.map {
+  margin: 40px 0px 40px 0px;
+  border: 5px solid orange;
+  border-radius: 10px;
 }
