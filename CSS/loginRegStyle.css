@@ -77,11 +77,11 @@ body {
 .container input {
   background-color: #ccc;
   border: none;
-  margin: 8px 0;
+  margin: 20px 0;
   padding: 10px 15px;
   font-size: 18px;
   border-radius: 10px;
-  width: 100%;
+  width: 75%;
   outline: none;
 }
 
