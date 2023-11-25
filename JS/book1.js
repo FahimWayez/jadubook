@@ -53,5 +53,5 @@ var sliderNav = function (manual) {
     buttons[manual].classList.add("active");
     slides[manual].classList.add("active");
     contents[manual].classList.add("active");
-    contents[manual].parentElement.querySelector('.text-container').classList.add("active"); // Add this line
+    contents[manual].parentElement.querySelector('.text-container').classList.add("active");
 }
