@@ -42,7 +42,7 @@ if (isset($_POST["login"])) {
         else 
         {
             $_SESSION["flag"] = true;            
-            header("location: ../View/customerLanding.html");
+            header("location: ../View/customerLanding.php");
             $_SESSION["customerAuthenticated"] = true;
         } 
         

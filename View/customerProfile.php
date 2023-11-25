@@ -46,14 +46,12 @@ $profilePhoto = getProfilePhoto($storedEmail);
         </div>
         <div class="separator"></div>
         <div class="goBackButton">
-            <!-- <a href="customerLanding.php">
+            <a href="customerLanding.php">
                 <i class="fa-solid fa-backward"></i>
                 Go Back
-            </a> -->
-            <a href="javascript:void(0);" onclick="goBack()"><i class="fa-solid fa-backward"></i>Go Back</a>
+            </a>
         </div>
     </div>
-    <script src="../JS/goBack.js"></script>
 </body>
 
 </html>
