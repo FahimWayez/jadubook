@@ -57,26 +57,37 @@ header .logo:hover {
   justify-content: space-between;
   align-items: center;
   padding: 80px 100px;
-  background: linear-gradient(to right, white, orange);
+  background: linear-gradient(to left, white, orange);
 }
 
 .sec1 .goDown {
   position: relative;
-  right: 300px;
+  right: 150px;
 }
 
-.sec1 .goDown button {
+.sec1 .goDown a {
   font-size: larger;
   color: rgba(255, 165, 0, 1);
   cursor: pointer;
   padding: 20px;
   border-radius: 10rem;
   border: 3px solid orange;
+  text-decoration: none;
+  color: orange;
+  font-weight: 700;
+  box-shadow: 0 0 5px orange, 0 0 25px orange;
   transition: all 1s ease;
 }
 
-.sec1 .goDown button :hover {
+.sec1 .goDown a:hover {
+  box-shadow: 0 0 5px orange, 0 0 25px orange, 0 0 50px orange, 0 0 100px orange,
+    0 0 200px orange;
   transform: scale(1.5) translateX(0px);
+}
+
+.sec1Image {
+  position: relative;
+  left: 100px;
 }
 
 .home {
@@ -115,7 +126,6 @@ header .logo:hover {
   transform: translateY(80px);
   margin-bottom: 12px;
 }
-
 .sliderNavigation .navButton {
   width: 12px;
   height: 12px;
@@ -124,6 +134,7 @@ header .logo:hover {
   cursor: pointer;
   margin-bottom: 40px;
   box-shadow: 0 0 2px rgba(2, 74, 18, 0.5);
+
   transition: 0.3s ease;
 }
 
@@ -142,11 +153,15 @@ header .logo:hover {
   overflow: hidden;
 }
 
+.sec2 {
+  background-color: rgba(0, 0, 0, 1);
+}
 .video-container,
 .text-container {
   width: 50%;
   padding: 20px;
   box-sizing: content-box;
+  overflow: hidden;
 }
 
 .text-container {
