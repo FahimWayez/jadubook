@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+  transition: 0.5s ease;
+  background-color: orange;
+  color: white;
+}
+
+header .brand {
+  color: white;
+  position: relative;
+  font-size: 4em;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+
+header .logo {
+  position: absolute;
+  top: 0px;
+  width: 126px;
+  height: 126px;
+  left: 0%;
+  border-radius: 0% 0% 50% 0%;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+header .brand:hover {
+  transform: scale(1.1) translateX(0px);
+}
+header .logo:hover {
+  transform: scale(1.5) translateX(0px);
+}
+
+.sec1 {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  background: linear-gradient(to right, white, orange);
+}
+
+.sec1 .goDown {
+  position: relative;
+  right: 300px;
+}
+
+.sec1 .goDown button {
+  font-size: larger;
+  color: rgba(255, 165, 0, 1);
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10rem;
+  border: 3px solid orange;
+  transition: all 1s ease;
+}
+
+.sec1 .goDown button :hover {
+  transform: scale(1.5) translateX(0px);
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.home .content {
+  z-index: 888;
+  color: white;
+  width: 75%;
+  margin-top: 100px;
+  display: none;
+}
+
+.home .content.active {
+  display: block;
+}
+
+.home .content p {
+  font-size: large;
+  margin: 25px -50px 25px -50px;
+}
+
+.sliderNavigation {
+  z-index: 888;
+  position: absolute;
+  /* left: 1100px; */
+  /* top: 40px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(80px);
+  margin-bottom: 12px;
+}
+
+.sliderNavigation .navButton {
+  width: 12px;
+  height: 12px;
+  background: orange;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 40px;
+  box-shadow: 0 0 2px rgba(2, 74, 18, 0.5);
+  transition: 0.3s ease;
+}
+
+.sliderNavigation .navButton:not(:last-child) {
+  margin-right: 20px;
+}
+
+.sliderNavigation .navButton:hover {
+  transform: scale(1.5);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container,
+.text-container {
+  width: 50%;
+  padding: 20px;
+  box-sizing: content-box;
+}
+
+.text-container {
+  justify-content: center;
+  text-align: center;
+  height: 720px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
