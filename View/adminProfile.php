@@ -3,7 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 if (!isset($_SESSION["adminAuthenticated"]) || $_SESSION["adminAuthenticated"] !== true) {
-    header("location: landingPage.php");
+    header("location: ../View/index.html");
     exit(); 
 }
 require_once("../Model/adminProfileModel.php");
