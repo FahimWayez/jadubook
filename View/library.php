@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <div id="loadingAnimation"></div>
     <header class='header'>
         <a href=""><video class="logo" src="Images/logo.mp4" muted autoplay id="logoVideo"></video></a>
         <a href="" class="brand">JaduBook</a>
@@ -131,7 +130,6 @@
         <div class="credit">Copyright ©2023 All Rights Reserved!</div>
     </section>
     <script src="../JS/library.js"></script>
-    <script src="../JS/loadingAnimation.js"></script>
 
 </body>
 
