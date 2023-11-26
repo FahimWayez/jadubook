@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("loadingAnimation.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  transition: 0.5s ease;
+  background-color: orange;
+  color: white;
+}
+
+.header {
+  margin-bottom: 150px;
+}
+
+header .brand {
+  color: white;
+  position: relative;
+  left: 250px;
+  font-size: 4em;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+
+header .logo {
+  position: absolute;
+  top: 0px;
+  width: 126px;
+  height: 126px;
+  left: 0%;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+header .motto {
+  position: relative;
+  top: 40px;
+  cursor: pointer;
+}
+
+header .brand:hover {
+  transform: scale(1.1) translateX(0px);
+}
+
+header .header2 input {
+  padding: 5px 30px 5px 30px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+header .header2 label {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 80px 10px;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.book1 .book1Details {
+  position: relative;
+  left: 10px;
+}
+
+.book1Image {
+  position: relative;
+  left: 10px;
+}
+
+.footer {
+  background-color: orange;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  margin-bottom: 10px;
+}
+
+.box a {
+  color: #fff;
+}
+
+.credit {
+  margin-top: 20px;
+}
