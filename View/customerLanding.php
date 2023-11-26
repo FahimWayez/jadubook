@@ -64,7 +64,7 @@ $profilePhoto = getProfilePhoto($storedEmail);
             <div class="content">
                 <h3>JaduBook</h3>
                 <p>Welcome to the Magical World!</p>
-                <a href="#" class="btn">Shop Now</a>
+                <a href="library.php" class="btn">Visit our Library</a>
             </div>
 
             <div class="swiper books-slider">
