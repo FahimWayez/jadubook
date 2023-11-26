@@ -124,6 +124,9 @@ $profilePhoto = getProfilePhoto($storedEmail);
             </div>
         </div>
     </section>
+    <section class="sec3">
+
+    </section>
     <script src="../JS/book1.js"></script>
     <script src="../JS/loadingAnimation.js"></script>
 </body>

@@ -32,7 +32,7 @@ $profilePhoto = getProfilePhoto($storedEmail);
     <div class="container">
         <div class="header">
             <img class="profilePhoto"
-                src="../profile_photos/<?php echo $profilePhoto ? $profilePhoto : 'default.png'; ?>"
+                src="Images/<?php echo $profilePhoto['profilePhoto'] ? $profilePhoto['profilePhoto'] : 'default.png'; ?>"
                 alt="Profile Photo" />
             <h2>
                 <?php echo $profileDetails["name"]; ?>

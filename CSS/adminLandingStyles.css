@@ -143,30 +143,6 @@ header label span {
   padding-right: 1rem;
 }
 
-.searchWrapper {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.searchWrapper span {
-  display: inline-block;
-  padding: 0rem 1rem;
-  font-size: 1.5rem;
-}
-
-.searchWrapper:hover {
-  overflow-x: hidden;
-}
-
-.searchWrapper input {
-  height: 100%;
-  padding: 0.5rem;
-  border: none;
-  outline: none;
-}
-
 .userWrapper {
   display: flex;
   align-items: center;

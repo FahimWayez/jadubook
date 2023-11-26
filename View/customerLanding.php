@@ -36,7 +36,7 @@ $profilePhoto = getProfilePhoto($storedEmail);
         <div class="header-1">
             <a href=""><video class="logo" src="Images/logo.mp4" muted autoplay id="logoVideo"></video></a>
 
-            <form action="" class="search-form">
+            <form action="customerLanding" class="search-form">
                 <input type="search" name="" placeholder="Search for book" id="search-box" />
                 <label for="search-box" class="fas fa-search"></label>
             </form>
@@ -54,6 +54,7 @@ $profilePhoto = getProfilePhoto($storedEmail);
                 <a href="#featured">New Arrivals</a>
                 <a href="#home">Home</a>
                 <a href="#footer">Quick Links</a>
+                <a href="library.php">Library</a>
             </nav>
         </div>
     </header>
@@ -94,11 +95,6 @@ $profilePhoto = getProfilePhoto($storedEmail);
                             <p>Best Friends</p>
                         </a>
                         <a href="book1.php">
-                            <img src="./Images/book1/liberationwar.jpeg" alt="" />
-                            <br />
-                            <p>Voices of Freedom</p>
-                        </a>
-                        <a href="book3.html">
                             <img src="./Images/book1/liberationwar.jpeg" alt="" />
                             <br />
                             <p>Voices of Freedom</p>

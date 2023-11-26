@@ -1,6 +1,6 @@
 const logoVideo = document.getElementById("logoVideo");
 
-searchForm = document.querySelector('.search-form');
+const searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () => {
     searchForm.classList.toggle('active');

@@ -70,17 +70,12 @@ $profilePhoto = getProfilePhoto($storedEmail);
                 </label>
                 Dashboard
             </h2>
-
-            <div class="searchWrapper">
-                <span class="fa-solid fa-search"></span>
-                <input type="search" placeholder="Search Here" />
-            </div>
-
             <div class="userWrapper">
                 <?php if ($profilePhoto) { ?>
-                <img src="../profile_photos/<?php echo $profilePhoto; ?>" width="50" height="50" alt="Profile Photo">
+                <img src="Images/<?php echo $profilePhoto['profilePhoto']; ?>" width="50" height="50"
+                    alt="Profile Photo">
                 <?php } else { ?>
-                <img src="../profile_photos/default.jpeg" width="50" height="50" alt="Choose your Profile Photo">
+                <img src="Images/default.png" width="50" height="50" alt="Choose your Profile Photo">
                 <?php } ?>
                 <div>
                     <h4><?php 
