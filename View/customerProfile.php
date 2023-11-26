@@ -30,24 +30,28 @@ $profilePhoto = getProfilePhoto($storedEmail);
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <img class="profilePhoto"
-                src="Images/<?php echo $profilePhoto['profilePhoto'] ? $profilePhoto['profilePhoto'] : 'default.png'; ?>"
-                alt="">
-            <h2><?php echo $profileDetails["name"]; ?>
-            </h2>
+    <section class="home">
+        <video class="videoSlide" src="Images/profileBG.mp4" autoplay muted loop></video>
+        <div class="darkOverlay"></div>
+        <div class="container">
+            <div class="header">
+                <img class="profilePhoto"
+                    src="Images/<?php echo $profilePhoto['profilePhoto'] ? $profilePhoto['profilePhoto'] : 'default.png'; ?>"
+                    alt="">
+                <h2><?php echo $profileDetails["name"]; ?>
+                </h2>
+            </div>
+            <div class="profileDetails">
+                <p><strong>Email:</strong> <?php echo $profileDetails["email"]; ?></p>
+            </div>
+            <div class="goBackButton">
+                <a href="customerLanding.php">
+                    <i class="fa-solid fa-backward"></i>
+                    Go Back
+                </a>
+            </div>
         </div>
-        <div class="profileDetails">
-            <p><strong>Email:</strong> <?php echo $profileDetails["email"]; ?></p>
-        </div>
-        <div class="goBackButton">
-            <a href="customerLanding.php">
-                <i class="fa-solid fa-backward"></i>
-                Go Back
-            </a>
-        </div>
-    </div>
+    </section>
 </body>
 
 </html>
