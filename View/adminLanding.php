@@ -34,6 +34,7 @@ $profilePhoto = getProfilePhoto($storedEmail);
 </head>
 
 <body>
+    <div class="darkOverlay"></div>
 
     <input type="checkbox" id="navToggle">
     <div class="sidebar">
