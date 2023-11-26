@@ -27,7 +27,6 @@ $profilePhoto = getProfilePhoto($storedEmail);
 </head>
 
 <body>
-    <div id="loadingAnimation"></div>
     <header>
         <a href=""><video class="logo" src="Images/logo.mp4" muted autoplay id="logoVideo"></video></a>
         <a href="" class="brand">Voices of Freedom</a>
@@ -128,7 +127,6 @@ $profilePhoto = getProfilePhoto($storedEmail);
 
     </section>
     <script src="../JS/book1.js"></script>
-    <script src="../JS/loadingAnimation.js"></script>
 </body>
 
 </html>
